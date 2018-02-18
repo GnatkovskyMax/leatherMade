@@ -1,0 +1,114 @@
+
+.wrapp-slider img{
+   width:100%;
+    /*border-radius:7px*/
+}
+.wrapp-view{
+    padding-top:20px;
+       position:absolute;
+       height:100%;
+       top:0;
+       left:0;
+       background:rgba(255,255,255,.5);
+   }
+.wrapp-slider,.wrapp-info{
+ color:white; //rgba(207, 150, 136,1);
+    font-size:13px;
+}
+.add-info, .del-info, .price-info{
+    color:#ed0c8c;
+    margin:5px;
+    display:inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+    line-height: 65px;
+    width:65px;
+    height:65px;
+    border-radius:100%;
+    border:1px solid white;
+
+}
+.header-for-slider{
+    color:yellow;//rgba(207, 190, 136,1);
+
+    margin:0;
+    padding:0;
+}.add-info{
+     color:lightgreen;
+ }
+/*.wrapp-slider{*/
+    /*position:fixed;*/
+    /*top:30px;*/
+    /*left:0;*/
+    /*z-index: 6;*/
+/*}*/
+/*.wrapp-info{*/
+    /*position:relative;*/
+    /*top:200px;*/
+    /*left:0;*/
+/*}*/
+/*!* хром, сафари *!*/
+/*.wrapp-info::-webkit-scrollbar { width: 0; }*/
+
+/*!* ie 10+ *!*/
+/*.wrapp-info { -ms-overflow-style: none; }*/
+
+/*!* фф (свойство больше не работает, других способов тоже нет)*!*/
+/*.wrapp-info { overflow: -moz-scrollbars-none; }*/
+@media (min-width:768px) {
+    .add-info, .del-info, .price-info{
+        font-size: 18px;
+        line-height: 100px;
+        width:100px;
+        height:100px;
+
+    }
+}
+@media (max-width:990px){
+    .wrapp-products{
+        padding:0;
+    }
+}
+@media (min-width:990px){
+    .add-info, .del-info, .price-info{
+        margin:15px;
+        display:inline-block;
+        vertical-align: middle;
+        font-size: 30px;
+        line-height: 150px;
+        width:150px;
+        height:150px;
+        border-radius:100%;
+        //border:1px solid rgb(207, 150, 136);
+    }
+
+    .header-for-slider{
+        font-size: 50px;
+        margin-bottom:40px;
+    }
+    .wrapp-view{
+        position:fixed;
+        height:100%;
+        top:0;
+        left:0;
+        /*background:#6e790c;*/
+    }
+    .wrapp-slider,.wrapp-info{
+        position:relative;
+       // top:50%;
+        left:0;
+       // transform:translateY(-50%);
+    }
+    .wrapp-info{
+        top:25%;
+        left:0;
+        transform:translateY(-25%);
+        font-size:16px;
+        max-height: 90%;
+
+    }
+    .description-info{
+        overflow:auto;
+        max-height: 450px;
+    }
+}

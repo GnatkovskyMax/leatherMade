@@ -1,0 +1,131 @@
+.basket{
+    display:inline-block;
+    width: 52px;
+    height: 43px;
+    line-height: 39px;
+    font-size: 20px;
+    text-align: center;
+    /*background: rgba(15, 170, 209,.8);*/
+    color:gold;//rgba(15, 170, 209,1);
+}
+.langy{
+    height: 44px;
+   display:inline-block;
+    /*background: rgba(15, 170, 209,.8);*/
+    color:rgba(15, 170, 209,1);
+}
+/*.basket:hover, .langy:hover{*/
+    /*background-color:rgba(15, 170, 209,1);*/
+/*}*/
+.lang, .langy{
+    color:white;
+}
+/*.langy:last-child{*/
+    /*border-radius:0 5px 5px 0;*/
+/*}*/
+.basket{
+    padding-left: 22px;
+border-radius: 5px 0  0 5px;
+    background: url(/assets/img/basket.png) no-repeat center center rgba(15, 170, 209,0);
+    background-size: 50px 40px;
+
+    outline: none;
+}
+.wrapp-btn-collage{
+   /*padding: 170px 0 0 0;*/
+}
+.btn-collage{
+    background: rgba(15, 190, 150,.8);
+    width:157px;
+    line-height: 45px;
+    color: white;
+    font-size:22px;
+    border:none;
+    border-radius:5px;
+    outline:none;
+}
+.icon-block-xs{
+    padding-top:4px;
+}
+header{
+    background-size: cover;
+    padding-top:7px;
+}
+.slide-header{
+    padding:0;  min-height: 200px;
+    //max-height:460px;
+    overflow:hidden;
+}
+.for-header{
+    padding:0;
+    position:relative
+}
+.header .slide{
+    overflow: hidden;
+}
+.header-slider{
+    padding:0;  min-height: 200px;
+    max-height:460px;
+}
+body{
+    background: url("/assets/img/slider1.jpg") fixed no-repeat top center;
+    background-size: 250%;
+
+}
+@media (min-width: 990px) {
+    .wrapp-btn-collage{
+        padding: 220px 0 0 0;
+    }
+}
+    @media (max-width: 540px) {
+    .slide-header img{
+        height:200px;
+    }
+}
+@media (min-width: 540px) {
+    body{
+        background-size: 100%;
+
+    }
+    .slide-header img{
+        height:100%;
+        width:100%;
+    }
+}
+.header-slider *{
+    padding:0;
+
+    overflow:hidden;
+}
+.wrapp-for-header-info{
+    padding:0;
+    //position:absolute;
+
+}
+.logo{
+    border-radius:5px;
+    border: .5px solid white;
+    color:white;
+    font-size:27px;
+    text-shadow: 0.5px 0.5px grey;
+    padding:4px 10px;
+}
+.logo:active,.logo:hover,.logo:link{
+    color:white;
+    text-decoration: none;
+}
+h1{
+    margin:0;
+}
+@media (max-width: 768px) {
+    .center-xs{
+        text-align: center;
+    }
+    .icon-block-xs{
+        padding: 20px 0;
+    }
+
+    .wrapp-btn-collage{
+        padding:0 0 5px 0;
+    }
+}

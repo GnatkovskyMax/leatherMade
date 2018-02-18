@@ -1,0 +1,59 @@
+footer{
+    padding:20px 0;
+    margin-top:15px;
+    border-top:1px solid rgba(15, 170, 209,.8);
+}
+ .email-foot{
+     padding-top:15px;
+ }
+.foot-inp-phone, .foot-inp-name{
+      height:30px;
+  }
+.foot-btn{
+    border:none;
+    outline:none;
+    border-radius:4px;
+    padding: 10px 14px;
+    font-size: 14px;
+    color:white;
+    background: rgba(15, 170, 209,.8);
+    color: white;
+}
+
+.foot-btn:hover{
+     color:white;
+
+     background: rgba(15, 170, 150,.8);
+ }
+.foot-btn:active{
+    outline:none;
+    color:white;
+    box-shadow:inset 1px 1px 10px grey;
+background: rgba(15, 170, 150,.8);
+}
+.foot-btn:link{
+    color:white;
+}
+.up{
+    height:70px;
+    background: url('/assets/img/up.png') center center no-repeat;
+    background-size:  50px 50px;
+    cursor: pointer;
+}
+@media (min-width:768px) {
+    .email-foot{
+        padding-top:0;
+    }
+}
+@media(min-width:450px) and (max-width:768px ) {
+    .contact-wrapp-foot, .form-wrapp-foot{
+
+        width:50% ;
+    }
+
+}
+@media (min-width:990px) {
+    .foot-inp-phone, .foot-inp-name{
+        height:36px;
+    }
+}

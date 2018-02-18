@@ -1,0 +1,16 @@
+
+.wrapp-news,.all-news>*{
+    padding:0;
+}
+@media (max-width:450px){
+    .wrapp-photo-news {
+        width: 100%;
+    }
+    .wrapp-content-news{
+          width: 100%;
+      }
+
+}
+@media (max-width:990px){
+    .all-news{padding:0;}
+}

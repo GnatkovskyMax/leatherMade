@@ -1,0 +1,180 @@
+.forBasket{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: 2;
+    background-color:rgba(0,0,0,.4);
+    display:none;
+}
+.dataBasket{
+    border-top:7px solid rgba(15, 170, 209,.8);
+    border-bottom:7px solid rgba(15, 170, 209,.8);
+    border-radius:5px;
+    padding:10px 0;
+    max-width: 350px;
+    background-color:white;
+    position:relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+}
+.dataBasket *{
+    padding:3px;
+}
+.oneProductBasket{
+    position:relative;
+    margin-bottom: 3px;
+    padding-bottom:3px;
+    border-bottom: 1px solid grey;
+}
+.basket-img{
+    border-radius: 7px;
+}
+.deleteProduct{
+    cursor: pointer;
+    position:absolute;
+    background: url('/assets/img/del.png') no-repeat;
+    background-size: 15px 15px;
+    top:0;
+    right:5px;
+    width:15px;
+    height:15px;
+}
+
+.basket-material input{
+    outline:none;
+    border:none;
+}
+.basket-price.en:after,.price-info.en:after,.all-sum.en:after,.price-product.en:after{
+    content:'uah';
+    display:inline-block;
+}
+.basket-price.ru:after, .all-sum.ru:after,.price-product.ru:after,.price-info.ru:after{
+    content:'грн.';
+    display:inline-block;
+}
+.deleteIcon{
+    cursor: pointer;
+    position:absolute;
+    background: url('/assets/img/del-white.png') no-repeat center center;
+    background-size: 28px 28px;
+    color:white;
+    top:10px;
+    right:10px;
+    width:50px;
+    height:50px;
+    z-index: 10;
+}
+.addToBasket{
+     display:block;
+     /*background: url(/assets/img/basket-add.png) no-repeat center center;*/
+     /*background-size: 50px 40px;*/
+    background: limegreen;
+    color:white;
+ }
+.deleteProduc{
+    display:block;
+    /*background: url(/assets/img/basket-del.png) no-repeat center center;*/
+    /*background-size: 50px 40px;*/
+    background: mediumvioletred;
+    color:white;
+}
+/*.addToBasket.en::after{*/
+    /*font-size: 28px;*/
+    /*content:'+';    color:lightgreen;*/
+    /*padding-left: 7px;*/
+/*}*/
+/*.deleteProduc.en::after{*/
+    /*font-size: 28px;*/
+    /*content:'-';color:red;*/
+    /*padding-left: 7px;*/
+/*}*/
+/*.addToBasket.ru::after{*/
+    /*font-size: 28px;*/
+    /*content:'+';    color:lightgreen;*/
+    /*padding-left: 7px;*/
+/*}*/
+/*.deleteProduc.ru::after{*/
+    /*font-size: 28px;*/
+    /*content:'-';color:red;*/
+    /*padding-left: 7px;*/
+/*}*/
+@media (min-width: 990px) {
+    .dataBasket{
+        max-width: 500px;
+    }
+    /*.addToBasket{*/
+           /*!*background: url(/assets/img/basket-add.png) no-repeat 13px 36px;*!*/
+           /*!*background-size: 108px 88px;*!*/
+
+       /*}*/
+    /*.deleteProduc{*/
+        /*!*background: url(/assets/img/basket-del.png) no-repeat 13px 36px;*!*/
+        /*!*background-size: 108px 88px;*!*/
+
+    /*}*/
+
+    /*.addToBasket.en::after{*/
+        /*font-size: 21px;*/
+        /*content:'ADD';*/
+        /*padding-left: 0;*/
+    /*}*/
+    /*.deleteProduc.en::after{*/
+        /*font-size: 21px;*/
+        /*content:'DELETE';*/
+        /*padding-left: 0;*/
+    /*}*/
+    /*.addToBasket.ru::after{*/
+        /*font-size: 21px;*/
+        /*content:'ДОБАВИТЬ';*/
+        /*padding-left: 0;*/
+    /*}*/
+    /*.deleteProduc.ru::after{*/
+        /*font-size: 21px;*/
+        /*content:'УДАЛИТЬ';*/
+        /*padding-left: 0;*/
+    /*}*/
+}
+
+/*button.addToBasket, button.deleteProduc{*/
+    /*display:block;*/
+    /*position:absolute;*/
+    /*top:0;*/
+    /*right:5%;*/
+    /*border:none;*/
+    /*width:52px;*/
+    /*height:43px;*/
+    /*background: url('/assets/img/basket.png') no-repeat center center;*/
+    /*background-size: 50px 40px;*/
+    /*font-size:35px;*/
+    /*outline:none;*/
+/*}*/
+button.addToBasket::after{
+   content:'Добавить в корзину';
+}
+button.deleteProduc::after{
+    content:'Удалить с корзины';
+}
+.field{
+    cursor:pointer;
+    margin-bottom:7px;
+    border:2px solid lightgrey;
+    border-radius:5px;
+    outline:none;
+    transition:border-color .5s;
+}
+.field.active{
+    border-color:rgba(15, 170, 209,.8);
+}
+.for-post{
+    max-height:0;
+    overflow:hidden;
+    transition: max-height 0.25s ease-out;
+}
+.for-post-active{
+    max-height:150px;
+    height:auto;
+}

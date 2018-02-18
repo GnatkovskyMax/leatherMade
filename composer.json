@@ -1,0 +1,12 @@
+{
+    "name": "max/hauzer",
+    "require": {
+        "imagine/imagine": "~0.5.0"
+    },
+    "authors": [
+        {
+            "name": "Max Gnatkovsky",
+            "email": "gnatkovsky@bigmir.net"
+        }
+    ]
+}

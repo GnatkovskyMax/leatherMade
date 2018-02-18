@@ -1,0 +1,42 @@
+.history-content>*{padding:0;}
+.wrapp-content-history{
+    color:white;
+    font-size:1.5em;
+    text-align: center;
+}
+.cool{
+    color:gold;
+}
+@media (max-width:990px){
+    .history-content{padding:0;}
+
+}
+@media (max-width:450px){
+    .wrapp-photo-history{
+        width: 100%;
+    }
+    .wrapp-content-history{
+         width: 100%;
+     }
+}
+@media (max-width:768px){
+    .cool{
+         background: dimgrey;
+     }
+    .history{
+
+        padding:0;
+    }
+    .wrapp-content-history{
+        padding:0;color:dimgrey;
+        background: rgba(255,255,255,.7);
+    }
+}
+@media(min-width:768px){
+    .history-content{
+        padding-top:30px;
+    }
+    .wrapp-content-history{
+        font-size:3em;
+    }
+}
